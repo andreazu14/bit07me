@@ -4,226 +4,212 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
     <link rel="stylesheet" href="./css/main.css">
-    <script src="./js/main.js" defer></script>
-    <title>portafolio</title>
 </head>
 <body>
     <!-- MENU ENCABEZADO -->
-    <section class="contenedor-header">
+    <div class="contenedor-header">
         <header>
             <div class="logo">
                 <a href="#">ANDREA</a>
             </div>
             <nav id="nav">
                 <ul>
-                    <li><a href="#inicio">INICIO</a></li>
-                    <li><a href="#sobremi">SOBRE MI</a></li>
-                    <li><a href="#skills">SKILLS</a></li>
-                    <li><a href="#curriculum">CURRICULUM</a></li>
-                    <li><a href="#portafolio">PORTAFOLIO</a></li>
-                    <li><a href="#contacto">CONTACTO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
                 </ul>
             </nav>
-            <div class="nav-responsive">
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
                 <i class="fa-solid fa-bars"></i>
             </div>
         </header>
-    </section>
+    </div>
 
     <!-- SECCION INICIO -->
     <section id="inicio" class="inicio">
         <div class="contenido-banner">
-            <figure class="contenedor-img">
-                <img class="img" src="./img/yoo.jpg" alt="">
-            </figure>
-            <h1>ANDREA ZULUAGA</h1>
+            <div class="contenedor-img">
+                <img src="./img/yoo.jpg" alt="">
+            </div>
+            <h1>Andrea zuluaga</h1>
             <h2>desarrolladora de software</h2>
             <div class="redes">
-                <a href="https://www.instagram.com/andreazu_14/"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                <a href="https://www.linkedin.com/in/andrea-zuluaga-monroy-4896971b0/"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href="https://github.com/andreazu14/bit07me"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                
             </div>
         </div>
     </section>
 
     <!-- SECCION SOBRE MI -->
-    <section class="sobremi">
+    <section id="sobremi" class="sobremi">
         <div class="contenido-seccion">
-            <h2>Sobre mi</h2>
-            <p><span>hola, soy Andrea zuluaga</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus omnis quos numquam quo, eos molestias. Quisquam consequatur facere illum, necessitatibus consequuntur voluptates quasi velit iusto eum, dolorem, pariatur nam doloribus.</p>
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Andrea zuluaga.</span> desararrolladora web, con conocimientos en HTML, CSS, javascript, sigo aprendiendo cada dia para mejorar mis habilidades tecnicas para poder aportar soluciones para el desarrollo de aplicaciones web,Asegurar la accesibilidad y Crear herramientas que mejoren la interacción entre usuario y web, me gusta trabajar en equipo,aprender de las personas que me rodean y aportar con mi conocimiento.</p>
 
             <div class="fila">
                 <!-- datos personales -->
-                <section class="col">
-                    <h3>Datos personales</h3>
+                <div class="col">
+                    <h3>Datos Personales</h3>
                     <ul>
                         <li>
-                            <strong>Cumpleaños</strong>
-                            05-04-2002
-                        </li>
-                        <li>
-                            <strong>Telefono</strong>
-                            3235188867
-                        </li>
-                        <li>
                             <strong>Email</strong>
-                            example@gmail.com
+                            karenzu321@gmail.com
                         </li>
-                        <li>
-                            <strong>Website</strong>
-                            www.example@gmail.com
-                        </li>
-                        <li>
-                            <strong>Ubicación</strong>
-                            colombia
-                        </li>
+                        
                         <li>
                             <strong>Cargo</strong>
-                            desarrolladora frontend
+                            <span>desarrolladora web</span>
                         </li>
                     </ul>
-                </section>
+                </div>
 
                 <!-- intereses -->
-                <section class="col">
+                <div class="col">
                     <h3>Intereses</h3>
                     <div class="contenedor-intereses">
-                        <div class="intereses">
-                            <i class="fa-sharp fa-solid fa-headphones"></i>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
                             <span>MUSICA</span>
                         </div>
-                        <div class="intereses">
-                            <i class="fa-sharp fa-solid fa-book"></i>
+                        <div class="interes">
+                            <i class="fa-solid fa-notebook"></i>
                             <span>LIBROS</span>
                         </div>
-                        <div class="intereses">
-                            <i class="fa-sharp fa-solid fa-bicycle"></i>
+
+                        <div class="interes">
+                            <i class="fa-solid fa-person-biking"></i>
                             <span>CICLISMO</span>
                         </div>
-                        <div class="intereses">
-                            <i class="fa-sharp fa-solid fa-mug-hot"></i>
-                            <span>CAFÉ</span>
-                        </div>
-                        <div class="intereses">
-                            <i class="fa-sharp fa-solid fa-camera"></i>
-                            <span>FOTOS</span>
-                        </div>
-                        <div class="intereses">
-                            <i class="fa-sharp fa-solid fa-plane"></i>
-                            <span>VIAJES</span>
-                        </div>
-                        <div class="intereses">
+
+                        <div class="interes">
                             <i class="fa-brands fa-apple"></i>
                             <span>MACBOOK</span>
                         </div>
-                        <div class="intereses">
-                            <i class="fa-sharp fa-solid fa-motorcycle"></i>
-                            <span>MOTOS</span>
+
+                        <div class="interes">
+                            <i class="fa-solid fa-dumbbell"></i>
+                            <span>DEPORTE</span>
                         </div>
 
+                        <div class="interes">
+                            <i class="fa-solid fa-mug-hot"></i>
+                            <span>CAFÉ</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJES</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>FOTOS</span>
+                        </div>
+                        
                     </div>
-                </section>
+                </div>
             </div>
             <button>
-                Descargar CV <i class="fa-sharp fa-solid fa-download"></i>
+                Descargar CV <i class="fa-solid fa-download"></i>
                 <span class="overlay"></span>
             </button>
         </div>
     </section>
 
-    <!-- SECCION DE SKILLS -->
+    <!-- SECCION SKILLS -->
     <section class="skills" id="skills">
-        <div class="container-seccion">
+        <div class="contenido-seccion">
             <h2>Skills</h2>
             <div class="fila">
-                <!-- Technical skill -->
+                <!-- Technical Skill -->
                 <div class="col">
-                    <h3>Technical skills</h3>
-                    <div class="skills">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
                         <span>Javascript</span>
                         <div class="barra-skill">
                             <div class="progreso">
-                                <span>75%</span>
+                                <span>20%</span>
                             </div>
                         </div>
                     </div>
-                    <div class="skills">
+                    <div class="skill">
                         <span>HTML & CSS</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>85%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skills">
-                        <span>React</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>50%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skills">
-                        <span>Boostrap</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>10%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skills">
-                        <span>Scrum</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>10%</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- professional skills -->
-                <div class="col">
-                    <h3>professional skills</h3>
-                    <div class="skills">
-                        <span>Comunicación</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>89%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skills">
-                        <span>trabajo en equipo</span>
                         <div class="barra-skill">
                             <div class="progreso">
                                 <span>70%</span>
                             </div>
                         </div>
                     </div>
-                    <div class="skills">
+                    <div class="skill ">
                         <span>React</span>
                         <div class="barra-skill">
                             <div class="progreso">
-                                <span>50%</span>
+                                <span>15%</span>
                             </div>
                         </div>
                     </div>
-                    <div class="skills">
+                    <div class="skill">
                         <span>Boostrap</span>
                         <div class="barra-skill">
                             <div class="progreso">
-                                <span>10%</span>
+                                <span>15%</span>
                             </div>
                         </div>
                     </div>
-                    <div class="skills">
+                    <div class="skill">
                         <span>Scrum</span>
                         <div class="barra-skill">
                             <div class="progreso">
-                                <span>10%</span>
+                                <span>55%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Responsabilidad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>94%</span>
                             </div>
                         </div>
                     </div>
@@ -231,5 +217,171 @@
             </div>
         </div>
     </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Tecnologo en analisis y desarrollo de software</h4>
+                        <span class="casa">Instituto educativo Sena</span>
+                        <span class="fecha">2023 || 2025</span>
+                        <p>-Desarrollar la solución de software de acuerdo con el Diseño y metodologias de desarrollo</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>cursos complementarios de programación</h4>
+                        <span class="casa">Platzi</span>
+                        <span class="fecha">2021 || hasta la fecha </span>
+                        <p>desarrollo de cursos en linea dentro de la plataforma platzi enfocados en el desarrollo web.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Desarrollo frontend con especialización en React</h4>
+                        <span class="casa">Bit institute of technology</span>
+                        <span class="fecha">octubre 2022 || hasta la fecha</span>
+                        <p>construcción de proyectos básicos usando HTML - CSS y javascript para darle dinamismo a las páginas.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>cargo</h4>
+                        <span class="casa">//</span>
+                        <span class="fecha">fecha</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>cargo</h4>
+                        <span class="casa">//</span>
+                        <span class="fecha">fecha</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>cargo</h4>
+                        <span class="casa">//</span>
+                        <span class="fecha">fecha</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTAFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="./img/proyectocafe.png" alt="">
+                    <div class="overlay">
+                        <h3>blog de café</h3>
+                        <p>Pagina web estatica</p>
+                    </div>
+                </div>
+
+                <div class="proyecto">
+                    <img src="./img/mokeponpng.png" alt="">
+                    <div class="overlay">
+                        <h3 >Mokepon juego dinamico ✨</h3>
+                        <p>desarrollo web</p>
+                    </div>
+                </div>
+
+                <div class="proyecto">
+                    <img src="./img/mycard1.png" alt="">
+                    <div class="overlay">
+                        <h3 >card de presentación</h3>
+                        <p>My card</p>
+                    </div>
+                </div>
+
+                <div class="proyecto">
+                    <img src="img/p6.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Login y ejercicios js</h3>
+                        <p>desarrollo web</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <input type="text" placeholder="Tú Nombre">
+                    <input type="text" placeholder="Número telefónico">
+                    <input type="text" placeholder="Dirección de correo">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="./img/fondo1.jpg" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                colombia, Bogota D.C
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Contactame
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: example3321@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://github.com/andreazu14/bit07me"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.instagram.com/andreazu_14/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/andrea-zuluaga-monroy-4896971b0/"><i class="fa-brands fa-linkedin-in"></i></a>
+            
+        </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
 </body>
 </html>
