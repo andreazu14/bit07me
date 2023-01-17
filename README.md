@@ -1,6 +1,6 @@
 # BIT07ME
 
-Este es el primer ejercicio del año 2023
+Portafolio
 
 -   `Author: andrea zuluaga monroy`
 
